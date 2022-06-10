@@ -30,11 +30,12 @@ NotoSans, Regular, 18px (center, line height 29px)
 
 html {
     font-size: 125%; /*equals 20px*/
-    
+    line-height: 1.15;
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
     color: #0f0f0f;
 }
 
@@ -62,6 +63,11 @@ img {
 
 a {
     text-decoration: none;
+    display: inline-block;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .wrapper {
@@ -78,8 +84,8 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    font-family: poppins;
-    font-weight: bold;
+    /* font-family: poppins;
+    font-weight: bold; */
     color: #f6f6f6;
 
 }
@@ -104,9 +110,49 @@ h1 {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1;
+    margin: 10%;
 }
 
 h1 span {
     display: block;
     font-size: 6rem;
 }
+
+/* About Us Section */
+
+.aboutUs {
+    background-color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.aboutUs p {
+    padding-top: 30px;
+    line-height: 1.8;
+}
+
+.aboutUs a {
+    background-color: #8dd7e9;
+    padding: 10px 30px 10px 30px;
+    margin-top: 30px;
+}
+
+/* Peak Section */
+
+.peak {
+    display: flex;
+}
+
+.peak .imgContainer {
+    width: 50%;
+}
+
+.peak .textContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
