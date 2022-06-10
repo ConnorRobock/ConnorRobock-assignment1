@@ -29,10 +29,84 @@ NotoSans, Regular, 18px (center, line height 29px)
 /* General Styles */
 
 html {
-    font-size: 125%;
+    font-size: 125%; /*equals 20px*/
+    
 }
 
 body {
-    font-style: poppins;
+    font-family: 'Noto Sans', sans-serif;
+    color: #0f0f0f;
+}
 
+h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+/* header style */
+
+header {
+    background: url(./assets/asset-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: poppins;
+    font-weight: bold;
+    color: #f6f6f6;
+
+}
+
+header .flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.headerNav ul {
+    display: flex;
+}
+
+.headerNav ul li {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1;
+}
+
+h1 span {
+    display: block;
+    font-size: 6rem;
 }
