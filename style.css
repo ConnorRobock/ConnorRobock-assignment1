@@ -25,7 +25,12 @@ Body:
 NotoSans, Regular, 18px (center, line height 29px)
  */
 
+
 /* General Styles */
+
+html {
+    font-size: 125%;
+}
 
 body {
     font-style: poppins;
