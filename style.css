@@ -87,7 +87,6 @@ header {
     /* font-family: poppins;
     font-weight: bold; */
     color: #f6f6f6;
-
 }
 
 header .flexContainer {
@@ -140,19 +139,35 @@ h1 span {
 
 /* Peak Section */
 
-.peak {
+.peak, .packing {
     display: flex;
 }
 
-.peak .imgContainer {
+.imgContainer {
     width: 50%;
 }
 
-.peak .textContainer {
+.textContainer {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
+.peak .textContainer {
+    padding-left: 150px;
+    padding-right: 250px;
+}
+
+.peak p, .packing p {
+    padding-top: 30px;
+    line-height: 1.8;   
+}
+
+.peak a {
+    background-color: #8dd7e9;
+    padding: 10px 30px 10px 30px;
+    margin-top: 30px;
+}
