@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53b2eb9e40.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 <!-- Header -->
     <header>
         <div class="wrapper">
+            <!-- Header contents container -->
             <div class="flexContainer">
                 <h2>Summit</h2>
                 <nav class="headerNav">
@@ -26,10 +29,36 @@
                     </ul>
                 </nav>
             </div>
+            <h1>welcome to
+                <span>summit</span>
+            </h1>
+
+            <!-- Header Social Icons -->
+            <div class="socialNav">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <span class="sr-only">Facebook Icon</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <span class="sr-only">Instagram Icon</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <span class="sr-only">LinkedIn Icon</span>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <span class="sr-only">Twitter Icon</span>
+                    </li>
+                </ul>
+            </div>
         </div> <!-- End of header wrapper-->
-        <h1>welcome to
-            <span>summit</span>
-        </h1>
+        
+        
+
+        </div>
     </header>
 
 <!-- Main -->
@@ -44,32 +73,34 @@
         </Section>
 
 <!-- peak Section -->
-        <section class="peak">
-            <div class="imgContainer">
-                <div><img src="./assets/asset-2.jpg" alt="flowers with a snow covered mountain in the background"></div>
+        <section class="blog">
+            <div class="peak">
+                <div class="imgContainer">
+                    <div><img src="./assets/asset-2.jpg" alt="flowers with a snow covered mountain in the background"></div>
+                </div>
+                <div class="textContainer">
+                    <h3>peak photos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ab accusamus veniam perferendis officia, dolorem nulla rem!</p>
+                    <a href="#">Read More</a>
+                </div>
             </div>
-            <div class="textContainer">
-                <h3>peak photos</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ab accusamus veniam perferendis officia, dolorem nulla rem!</p>
-                <a href="#">Read More</a>
-            </div>
-        </section>
 
 <!-- packing Section -->
-        <section class="packing">
-            <div class="textContainer">
-                <h3>packing essentials</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ab accusamus veniam perferendis officia,
-                dolorem nulla rem!</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="imgContainer">
-                <div><img src="./assets/asset-3.jpg" alt="plane wing with snow covered mountains in the background"></div>
+            <div class="packing">
+                <div class="textContainer">
+                    <h3>packing essentials</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ab accusamus veniam perferendis officia,
+                    dolorem nulla rem!</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="imgContainer">
+                    <div><img src="./assets/asset-3.jpg" alt="plane wing with snow covered mountains in the background"></div>
+                </div>
             </div>
         </section>
 
 <!-- aboutMe Section -->
-        <section class="aboutMe" id="aboutMe">
+        <!-- <section class="aboutMe" id="aboutMe">
             <div class="wrapper">
                 <div class="imgContainer">
                     <div><img src="./assets/asset-7.png" alt="woman with hair blowing in the wind"></div>
@@ -79,20 +110,18 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptas enim est animi quibusdam, sed autem eum similique, voluptates nostrum earum accusantium voluptatibus blanditiis consequuntur incidunt pariatur. Hic perspiciatis quos quas reiciendis fugiat inventore dolore voluptates illo deserunt? Quam modi dolores eius nisi saepe tempora ducimus dolorum dicta eaque illo, quis rem quasi sunt similique et incidunt, autem excepturi. Iusto ipsum velit assumenda vel commodi animi dignissimos pariatur neque quidem porro, aliquam quaerat a illum! Earum vel harum voluptatum minima inventore, non possimus!</p>
                     <a href="#">FIND OUT MORE</a>
                 </div>
-            </div> <!-- end of aboutMe wrapper-->
-        </section>
+            </div>
+        </section> -->
 
 <!-- gallery -->
         <section class="gallery" id="gallery">
             <div class="wrapper">
-                <div class="galleryImgContainer">
-                    <ul>
-                        <li><img src="./assets/asset-4.jpg" alt="forrest with mountain range in the background"></li>
-                        <li><img src="./assets/asset-5.jpg" alt="peak of snow covered mountain"></li>
-                        <li><img src="./assets/asset-6.jpg" alt="ocean with mountain range in the background"></li>
-                    </ul>
-                </div>
-            </div> <!-- end of gallery wrapper-->
+                <ul class="galleryImgContainer">
+                    <li><img src="./assets/asset-4.jpg" alt="forrest with mountain range in the background"></li>
+                    <li><img src="./assets/asset-5.jpg" alt="peak of snow covered mountain"></li>
+                    <li><img src="./assets/asset-6.jpg" alt="ocean with mountain range in the background"></li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -101,34 +130,38 @@
             <div class="footerForm">
                 <h4>stay updated</h4>
                 <p>Subscribe to our newsletter for updates.</p>
+                <form>
+                    <input id="email" type="email" placeholder="email address">
+                    <label class="sr-only" for="email">email address</label>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
-            <form>
-                <input id="email" type="email" placeholder="email address">
-                <label class="sr-only" for="email">email address</label>
-                <button type="submit">Subscribe</button>
-            </form>
-            <div class="footer-contact">
-                <h4>contact</h4>
-                <p>info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 some road,</p>
-                <p>Toronto, ON</p>
+            
+            <div class="footerMenu">
+                <ul>
+                    <li><h4>contact</h4></li>
+                    <li><p>info@email.com</p></li>
+                    <li><p>123-456-7890</p></li>
+                    <li><p>123 some road,</p></li>
+                    <li><p>Toronto, ON</p></li>
+                </ul>
+                <ul>
+                    <li><h4>pages</h4></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutUs">ABOUT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+                <ul>
+                    <li><h4>recent posts</h4></li>
+                    <li><a href="#">Climbing Tips</a></li>
+                    <li><a href="#">Photography Guide</a></li>
+                    <li><a href="#">Top Mountains</a></li>
+                    <li><a href="#">Everest</a></li>
+                </ul>
             </div>
-            <div class="footer-pages">
-                <h4>pages</h4>
-                <a href="#home">HOME</a>
-                <a href="#aboutUs">ABOUT</a>
-                <a href="#blog">BLOG</a>
-                <a href="#CONTACT">CONTACT</a>
-            </div>
-            <div class="footer-recent">
-                <h4>recent posts</h4>
-                <a href="#">Climbing Tips</a>
-                <a href="#">Photography Guide</a>
-                <a href="#">Top Mountains</a>
-                <a href="#">Everest</a>
-            </div>
-        </div> <!-- end of footer wrapper--> 
+            <p>Copyright © 2018 HackerYou</p>
+        </div>
     </footer>
 </body>
 </html>
